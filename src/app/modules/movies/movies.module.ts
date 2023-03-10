@@ -16,11 +16,8 @@ import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
     MoviesComponent,
     MovieDetailComponent,
-    BaseComponent
   ],
   imports: [
     BrowserModule,
@@ -36,4 +33,4 @@ import { HttpClientModule } from '@angular/common/http';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class MoviesModule{ }

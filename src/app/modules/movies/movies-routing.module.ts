@@ -1,20 +1,17 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/login/login.component';
+import { MoviesComponent } from './movies.component';
+
 
 const routes: Routes = [
   {
-    path: 'login',
-    component: LoginComponent
+    path: '',
+    component: MoviesComponent
   },
-  {
-    path: 'pupular',
-    loadChildren: () => import ('./modules/movies')
-  }
   {
     path: '**',
     pathMatch: 'full',
-    redirectTo: 'login'
+    redirectTo: ''
   }
 ];
 
