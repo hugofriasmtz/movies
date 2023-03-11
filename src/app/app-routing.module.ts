@@ -9,8 +9,8 @@ const routes: Routes = [
   },
   {
     path: 'pupular',
-    loadChildren: () => import ('./modules/movies')
-  }
+    //loadChildren: () => import ('./modules/movies')
+  },
   {
     path: '**',
     pathMatch: 'full',
